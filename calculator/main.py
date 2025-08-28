@@ -5,8 +5,7 @@ from pkg.render import render
 
 def main():
     calculator = Calculator()
-    #expression = " ".join(sys.argv[1:])
-    expression = "3 + 7 * 2"
+    expression = " ".join(sys.argv[1:])
     try:
         result = calculator.evaluate(expression)
         to_print = render(expression, result)
