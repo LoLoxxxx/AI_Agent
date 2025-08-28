@@ -107,10 +107,6 @@ All paths you provide should be relative to the working directory. You do not ne
         print(f"Prompt tokens: {prompt_tokens}")
         print(f"Response tokens: {response_tokens}")
 
-    if not response.function_calls:
-        print(response.text)
-        return
-
 
     # print(f'{response.text}\n Prompt tokens: {response.usage_metadata.prompt_token_count}\n Response tokens: {response.usage_metadata.candidates_token_count}')
 
